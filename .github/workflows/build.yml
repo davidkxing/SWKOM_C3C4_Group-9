@@ -68,7 +68,6 @@ jobs:
           name: artifact
           #From this path
           path: target/data-0.0.1-SNAPSHOT.jar
-jobs:
 #Deploy's job
   deploy:
     #Depends on build's job
