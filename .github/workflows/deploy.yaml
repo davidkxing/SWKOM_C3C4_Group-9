@@ -3,7 +3,7 @@ name: release
 on:
   # the 1st condition
   workflow_run:
-    workflows: ["Master CI"]
+    workflows: ["Tests"]
     branches: [main]
     types:
       - completed
