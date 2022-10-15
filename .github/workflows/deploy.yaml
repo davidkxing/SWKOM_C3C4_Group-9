@@ -1,12 +1,12 @@
-#Workflow name
-name: Master CI
+name: deploy
+
 on:
-  #Manually trigger workflow runs
-  workflow_dispatch:
-  #Trigger the workflow on push from the main branch
-  push:
-    branches:
-      - main
+  # the 1st condition
+  workflow_run:
+    workflows: ["tests"]
+    branches: [main]
+    types:
+      - completed
 jobs:
 #Deploy's job
   deploy:
