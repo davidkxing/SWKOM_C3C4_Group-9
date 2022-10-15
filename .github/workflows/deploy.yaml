@@ -1,6 +1,6 @@
 name: deploy
 
-on:
+on: push
   # the 1st condition
   workflow_run:
     workflows: ["Tests"]
